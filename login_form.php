@@ -8,7 +8,7 @@ if (isset($_POST["login_user_with_product"])) {
 	//here we are converting array into json format because array cannot be store in cookie
 	$json_e = json_encode($product_list);
 	//here we are creating cookie and name of cookie is product_list
-	setcookie("product_list",$json_e,strtotime("+1 day"),"/","","",TRUE);
+	setcookie("product_list",$json_e,strtotime("+1 day"),"/","",FALSE,TRUE);
 
 }
 ?>
